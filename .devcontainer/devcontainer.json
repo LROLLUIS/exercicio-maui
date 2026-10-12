@@ -1,1 +1,11 @@
-
+{
+  "image": "mcr.microsoft.com/devcontainers/dotnet:8.0",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": { "version": "17" }
+  },
+  "containerEnv": {
+    "AndroidSdkDirectory": "/home/vscode/android-sdk",
+    "JavaSdkDirectory": "/usr/local/sdkman/candidates/java/current"
+  },
+  "postCreateCommand": "sudo dotnet workload install maui-android"
+}
